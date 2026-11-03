@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/widget_surface">
+
+    <TextView
+        android:id="@+id/widget_title"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:text="@string/app_name"
+        android:textColor="#28231F"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView android:id="@+id/widget_first" style="@style/WidgetRow" android:text="我的收藏" />
+    <TextView android:id="@+id/widget_second" style="@style/WidgetRow" android:text="常用网页" />
+    <TextView android:id="@+id/widget_third" style="@style/WidgetRow" android:text="常用路线" />
+
+    <TextView
+        android:id="@+id/widget_empty"
+        style="@style/WidgetRow"
+        android:text="@string/launch_widget_empty"
+        android:visibility="gone" />
+</LinearLayout>
