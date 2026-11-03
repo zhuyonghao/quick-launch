@@ -6,7 +6,7 @@
     android:autoMirrored="true">
     <path
         android:pathData="M3.5,8H12.25M8.75,4.5L12.25,8L8.75,11.5"
-        android:strokeColor="@color/widget_accent"
+        android:strokeColor="#FFFFFF"
         android:strokeLineCap="round"
         android:strokeLineJoin="round"
         android:strokeWidth="1.6" />

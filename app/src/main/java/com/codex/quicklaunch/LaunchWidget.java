@@ -42,6 +42,7 @@ public final class LaunchWidget extends AppWidgetProvider {
         widget.setOnClickPendingIntent(R.id.widget_title, appClick);
         widget.setOnClickPendingIntent(R.id.widget_empty, appClick);
         widget.setViewVisibility(R.id.widget_empty, entries.isEmpty() ? View.VISIBLE : View.GONE);
+        widget.setViewVisibility(R.id.widget_pair, entries.size() > 1 ? View.VISIBLE : View.GONE);
 
         for (int index = 0; index < ROWS.length; index++) {
             int row = ROWS[index];

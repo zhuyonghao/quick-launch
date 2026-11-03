@@ -6,22 +6,37 @@
     <color name="widget_outline">#E0E4F3</color>
     <color name="widget_row_color">#EAE8FF</color>
     <color name="widget_row_ink">#2F2B70</color>
-    <color name="widget_accent">#5146D9</color>
-    <style name="WidgetRow">
+
+    <style name="WidgetTile">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="WidgetPrimary" parent="WidgetTile">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">0dp</item>
         <item name="android:layout_weight">1</item>
         <item name="android:layout_marginTop">4dp</item>
-        <item name="android:background">@drawable/widget_row</item>
+        <item name="android:background">@drawable/widget_primary</item>
         <item name="android:drawableEnd">@drawable/widget_arrow</item>
-        <item name="android:drawablePadding">8dp</item>
-        <item name="android:gravity">center_vertical</item>
-        <item name="android:paddingStart">12dp</item>
-        <item name="android:paddingEnd">12dp</item>
-        <item name="android:singleLine">true</item>
-        <item name="android:ellipsize">end</item>
+        <item name="android:drawablePadding">6dp</item>
+        <item name="android:paddingStart">11dp</item>
+        <item name="android:paddingEnd">11dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="WidgetSecondary" parent="WidgetTile">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/widget_row</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:paddingEnd">8dp</item>
         <item name="android:textColor">@color/widget_row_ink</item>
-        <item name="android:textSize">14sp</item>
-        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">13sp</item>
     </style>
 </resources>
