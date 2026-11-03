@@ -2,11 +2,13 @@
     <string name="app_name">Quick Launch</string>
     <style name="AppTheme" parent="android:style/Theme.Material.Light.NoActionBar">
         <item name="android:fontFamily">sans</item>
-        <item name="android:colorAccent">#A83E2D</item>
+        <item name="android:colorAccent">#5146D9</item>
+        <item name="android:textColorPrimary">#17213B</item>
+        <item name="android:textColorSecondary">#535D75</item>
         <item name="android:windowLightStatusBar">true</item>
         <item name="android:windowLightNavigationBar">true</item>
-        <item name="android:statusBarColor">#FBF7F0</item>
-        <item name="android:navigationBarColor">#FBF7F0</item>
-        <item name="android:windowBackground">#FBF7F0</item>
+        <item name="android:statusBarColor">#F4F6FC</item>
+        <item name="android:navigationBarColor">#F4F6FC</item>
+        <item name="android:windowBackground">#F4F6FC</item>
     </style>
 </resources>
